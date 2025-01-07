@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <h4>Node MySQL</h4>
+    <ul>
+      <li><a href="/">Inicio</a></li>
+      {{#if user }}
+        <li><a href="/profile">Mi Perfil</a></li>
+        <li><a href="/auth/logout">Cerrar Sesión</a></li>
+      {{else}}
+        <li><a href="/login">Inicio de Sesión</a></li>
+        <li><a href="/register">Registrarse</a></li>
+      {{/if}}
+    </ul>
+  </nav>
+
+  <div class="container mt-4">
+    <div class="jumbotron">
+      <h1 class="display-4">Proyecto Login</h1>
+      <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam nulla qui quam accusantium minima dolorem ex id deserunt. Consectetur rerum officia molestias nostrum excepturi facere reiciendis harum quam cum debitis!.</p>
+      <hr class="my-4">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aperiam maxime non voluptas tempore exercitationem asperiores harum rem neque quasi, cum enim sequi, ratione nostrum explicabo voluptatum ipsam! Veniam, qui!.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Boton de ejemplo</a>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+</body>
+</html>

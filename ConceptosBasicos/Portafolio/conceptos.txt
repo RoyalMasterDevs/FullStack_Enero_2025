@@ -1,0 +1,147 @@
+Conceptos Básicos.
+
+Algoritmo. Serie de pasos ordenados que se utilizan para resolver un problema.
+
+Quiero hacer un té:
+1.- Hervir el agua, a cierta temperatura (con un termometro)
+2.- Poner la bolsita de té en la taza.
+3.- Verter el agua caliente.
+4.- Agregar azúcar o leche (opcional).
+5.- Revolver y servir.
+
+Variables.
+
+edad = 25
+nombre = "Juan"
+
+edad = 30
+nombre = "Jorge"
+
+Tipos de Datos. Son las diferentes clases de datos que podemos usar en programación.
+
+Enteros. int (integer). 10, 25, 300
+Flotantes. (float) Numeros con decimales. 3.1416, 4.69, 8.90
+Cadenas. (strings, str) Texto. "Hola Mundo", '92330', "%/(##)" 
+Booleano. (Boolean): Verdadero o Falso (True o false)
+
+Operadores. 
+Son símbolos que realizan alguna operación con los datos.
+
+arítmeticos: +,-,*, /, % (residuo de division)
+Comparativos: ==, !=, >, <, >=, <=
+Logicos: AND, OR, NOT (y, o, no)
+
+a=5
+b=3
+
+suma = a + b #resultado: 8
+resultado  a != b 
+boolean : true or false? > true
+
+Estructuras de Control. Permite tomar decisiones o repetir acciones en un programa. 
+
+Condicionales (if, else):
+
+Se usan para tomar decisiones basadas en Condicionales
+
+si (edad >= 18) entonces
+    imprimir ("Eres mayor de edad")
+sino
+    imprimir ("Eres menor de edad")
+
+    if (edad >= 18) 
+        print("Eres mayor de edad")
+    else
+        print("Eres menor de edad")
+
+Bucles (Loops): Es un ciclo de repetición, sirve para repetir acciones mientras una condición sea verdadera o falsa.
+
+For: Para un número definido de repeticiones.
+While: Para repeticiones basadas en una condición.
+
+    contador = 0
+    
+    while (contador < 5):
+        print (contador)
+        contador = contador + 1
+
+Funciones. Son bloques de código que realizan una tarea en específico y se pueden reutilizar.
+
+funcion bucleWhile {
+     while (contador < 5):
+        print (contador)
+        contador = contador + 1
+}
+
+funcion saludar(nombre):
+
+    imprime("Hola " + nombre)
+
+saludar("Juan") #Salida: Hola Juan 
+
+Arrays (Arreglos) o listas. Son estructuras que almacenan múltiples valores en un solo lugar.
+
+numeros = [1, 2, 3, 4, 5, 6]
+imprimir (numeros [3]) #4
+
+Entrada y Salida. Permite interactuar con el usuario.
+
+nombre = leer("Cual es tu nombre?)
+nombre = "Jorge"
+
+imprimir ("Hola " + nombre)
+
+Depuración (Debugging). Proceso de encontrar y corregir errores en tu código. Los errores se llaman "bugs".
+
+Lenguages de Programación. 
+    Lenguages compilados. C, C#, C++, visual basic, F#, java, 
+    Lenguages de Interpretación. python, javascript, go, php 
+
+Paradigma de Programación. un enfoque que organiza el código para resolver problemas. Tiene sus propias reglas, conceptos y ventajas según el tipo de problema que se quiere resolver.
+
+Programación Imperativa. Definimos una Secuencia de Pasos. 
+Entender el problema, analizarlo, implementar la solución, y resolverlo.
+
+Programación Declarativa. Se enfoca más en los resultados que en los pasos.
+
+SQL. SELECT nombre FROM empleados WHERE edad > 30; 
+
+POO. Programación Orientada a Objetos. Trabaja con un concepto de "objetos", son representados de entidades del mundo real.
+
+Busca agrupar datos y funciones relacionadas en objetos para promover la reutilización y modularidad del código. 
+
+     Encapsulación. Los datos de un objeto están protegidos y solo pueden ser modificados mediante métodos.
+
+     Abstracción. Simplifica la representación de un objeto ocultando detalles innecesarios.
+
+     Herencia. Permite que unda clase (hija) herede atributos y métodos de otra clase (padre).
+
+     Polimorfismo. Permite usar el mismo método en diferentes clases con comportamientos distintos.
+
+Clase. Son estructuras que van a aplicar las mismas Características para diferentes objetos y valores. 
+
+Clase Usuario{
+    nombre: str,
+    edad: int,
+    puesto: str
+}
+
+usuario{
+    nombre: "Jorge",
+    edad: 36,
+    puesto: Desarrolador
+}
+
+Clase Usuario("Jorge", 36, "Desarrolador")
+
+
+Class Persona:
+    def __init__(self, nombre, edad):
+    self.nombre = nombre #atributo
+    self.edad: edad
+
+    def saludar(self):
+        print (f"Hola, soy {self.nombre} y tengo {self.edad} años.")
+
+    persona1 = persona ("Ana", 25)
+    persona.saluda() #Salida: Hola, soy Ana y tengo 25 años.    
