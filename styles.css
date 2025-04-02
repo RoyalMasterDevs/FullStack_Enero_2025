@@ -1,0 +1,115 @@
+:root {
+    --fondoColor: #3ea5fa;
+    --colorLetra: rgb(0, 0, 0);
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--fondoColor);
+    font-family: "Roboto", sans-serif;
+}
+
+/* header{
+    display: flex;
+} */
+/* CONTENIDO HERO */
+.hero {
+    /* FLEX ORDENA LOS ELEMENTOS DESDE EL ELEMNTO PADRE HACIA EL HIJO */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: url(./img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Capa de polarizado usando rgba */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* PROYECTOS */
+#proyectos {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.tarjeta-cont {
+    display: flex;
+    overflow-x: scroll;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 350px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 25px;
+    column-gap: 10px;
+
+
+}
+
+.tarjeta {
+    display: block;
+    /* display:none; En caso de que quieras esconder el elemento */
+    padding: 50px;
+    text-align: center;
+    scroll-snap-align: start;
+    border-radius: 50px;
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+    color: white;
+
+}
+
+.tarjeta:nth-child(1) {
+    background-image: url(./img/reproductor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tarjeta:nth-child(2) {
+    background-image: url(./img/calculadora.jpg);
+    background-size: cover;
+}
+
+.tarjeta:nth-child(3) {
+    background-image: url(./img/login.jpg);
+    background-size: cover;
+}
+
+.tarjeta:nth-child(4) {
+    background-image: url(./img/login.jpg);
+    background-size: cover;
+}
