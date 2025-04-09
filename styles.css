@@ -79,9 +79,9 @@ body {
 
 }
 
-.tarjeta {
+/* .tarjeta {
     display: block;
-    /* display:none; En caso de que quieras esconder el elemento */
+
     padding: 50px;
     text-align: center;
     scroll-snap-align: start;
@@ -91,7 +91,7 @@ body {
     border: 2px solid black;
     color: white;
 
-}
+} */
 
 .tarjeta:nth-child(1) {
     background-image: url(./img/reproductor.jpg);
@@ -112,4 +112,62 @@ body {
 .tarjeta:nth-child(4) {
     background-image: url(./img/login.jpg);
     background-size: cover;
+}
+
+/* BEM. BLOQUE ELEMENTO MODIFICADOR */
+/* BLOQUE */
+.tarjeta {
+    display: block;
+    /* display:none; En caso de que quieras esconder el elemento */
+    padding: 50px;
+    text-align: center;
+    scroll-snap-align: start;
+    border-radius: 50px;
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+    color: white;
+
+}
+
+/* ELEMENTO */
+.tarjeta__titulo {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.tarjeta__texto {
+    color: red;
+    font-size: 10px;
+}
+
+.tarjeta--red{
+    background-color: red;
+}
+
+.btn{
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: white;
+    color:blue;
+    cursor: pointer;
+}
+.btn--green{
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.btn--green:hover{
+    background-color: white;
+    color:green;
+    cursor: pointer;
 }
